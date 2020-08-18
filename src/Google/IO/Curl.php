@@ -82,7 +82,7 @@ class Google_IO_Curl extends Google_IO_Abstract
     curl_setopt($curl, CURLOPT_FOLLOWLOCATION, false);
     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, true);
     
-    curl_setopt($ch, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4);
+    curl_setopt($curl, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4);
 
     // The SSL version will be determined by the underlying library
     // @see https://github.com/google/google-api-php-client/pull/644
